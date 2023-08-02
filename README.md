@@ -11,4 +11,6 @@ Very first demo for Pref with Python3.9, Django4 and SQLite
 ==> Look up http://localhost:8000 by default
 
 # DB design
-![Screenshot 2023-08-02 at 23.10.34.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2Fc4c871t51dvdb5cwwvpvwn840000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_q9HTMn%2FScreenshot%202023-08-02%20at%2023.10.34.png)
+<img width="803" alt="Screenshot 2023-08-02 at 23 12 23" src="https://github.com/luckyjd/demo_pref/assets/21038766/c7085463-2037-43cd-973e-34a683bd50de">
+
+# Preview 

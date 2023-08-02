@@ -13,7 +13,7 @@ Very first demo for Pref with Python3.9, Django4 and SQLite
 
 PostWrap : 
  - 1st line : icon + Author nickname + time ( how long from created time to now )
- - 2nd line : title of post
+ - 2nd line : title of post ( ellipsis overflow if too long ) 
  - 3rd line : newest comment about this post ( if dont have any comment, it's blank )
  - 4th line : count of view, like, dislike and comment
 

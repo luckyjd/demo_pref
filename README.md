@@ -16,6 +16,7 @@ PostWrap :
  - 2nd line : title of post
  - 3rd line : newest comment about this post ( if dont have any comment, it's blank )
  - 4th line : count of view, like, dislike and comment
+
 Function :
  - can search by title ( wildcard )
  - can change how many post per page ( apply after click search )

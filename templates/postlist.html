@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+    <div class="page-content page-container" id="page-content">
+        <div id="loader">
+        </div>
+        <div class="padding">
+            <div class="row pb-2">
+                <div class="col-6 d-flex justify-content-start align-self-center ">
+                    <input type="text" class="w-50" placeholder="Title search.." name="search" id="titleSearch">
+                    <button type="button" id="clickSearch" class="btn btn-primary btn-sm ml-2">Search</button>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-self-center">
+                    <input id="perPage" style="width: 40px" class="text-center" value="20">
+                    <p class="m-0 ml-1 mr-3 mt-1">per Page</p>
+                    <select id="order" name="order">
+                        <option value="-created_at">Recent</option>
+                        <option value="-view">Most View</option>
+                        <option value="-like">Most Like</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="list list-row block" id="postListWrap">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ml-auto">
+                    <nav>
+                        <ul id="pagination" class="pagination d-flex justify-content-center flex-wrap pagination-flat pagination-success">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
+{% block js %}
+    <script src="{% static 'js/app.js' %}"></script>
+{% endblock js %}

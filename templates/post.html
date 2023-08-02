@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+    <div class="page-content page-container" id="page-content">
+        <div class="form-group ">
+            <div class="row">
+                <label class="col-2 control-label mb-0 d-flex align-items-center font-16">
+                    Title
+                </label>
+                <div class="col-10">
+                    <input name="title" class="form-control" type="text" value="{{ post.title }}" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="row">
+                <label class="col-2 control-label mb-0 d-flex align-items-center font-16">
+                    Author
+                </label>
+                <div class="col-10">
+                    <input name="title" class="form-control" type="text" value="{{ post.author }}" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="row">
+                <label class="col-2 control-label mb-0 d-flex align-items-center font-16">
+                    Content
+                </label>
+                <div class="col-10">
+                    <textarea name="title" class="form-control" type="text" readonly>{{ post.content }}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-group ">
+                <div class="row">
+                    <label class="col-2 control-label mb-0 d-flex align-items-center font-16">
+                        Create At
+                    </label>
+                    <div class="col-10">
+                        <input name="title" class="form-control" type="text" value="{{ post.created_at }}" readonly>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+{% endblock main %}
+

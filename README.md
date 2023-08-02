@@ -13,4 +13,8 @@ Very first demo for Pref with Python3.9, Django4 and SQLite
 # DB design
 <img width="803" alt="Screenshot 2023-08-02 at 23 12 23" src="https://github.com/luckyjd/demo_pref/assets/21038766/c7085463-2037-43cd-973e-34a683bd50de">
 
-# Preview 
+# Create test data 
+- Create User: http://localhost:8000/api/user/
+- Create Post: http://localhost:8000/api/post/
+- Create Comment: http://localhost:8000/api/comment/
+

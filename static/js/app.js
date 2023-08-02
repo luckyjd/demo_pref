@@ -25,7 +25,6 @@ const searchPostList = (page) => {
             if (data['results'].length) {
                 $.each(data['results'], function (index, value) {
                     let timeAgo = moment(value['created_at']).fromNow();
-                    console.log(timeAgo);
                     genPost += `<div class="list-item" onclick="location.href = '/post/${value['id']}';">
                         <div>
                             <div class="d-flex justify-content-start align-self-center">
@@ -36,10 +35,10 @@ const searchPostList = (page) => {
                             <div class="item-except text-sm h-1x font-weight-bold">${value['title']}</div>
                             <div class="item-except text-muted text-sm h-1x">${value['comment']}</div>
                             <div class="d-flex">
-                                <div class="pr-2"><span><i class="fa fa-eye font-16 pr-1"></i></span> ${value['view']}</div>
-                                <div class="pr-2"><span><i class="fa fa-thumbs-o-up font-16 pr-1"></i>${value['like']}</div>
-                                <div class="pr-2"><span><i class="fa fa-thumbs-o-down font-16 pr-1"></i>${value['dislike']}</div>
-                                <div class="pr-2"><span><i class="fa fa-comments-o font-16 pr-1"></i>${value['total_comment']}</div>
+                                <div class="pr-3"><span><i class="fa fa-eye font-16 pr-1"></i></span> ${value['view']}</div>
+                                <div class="pr-3"><span><i class="fa fa-thumbs-o-up font-16 pr-1"></i>${value['like']}</div>
+                                <div class="pr-3"><span><i class="fa fa-thumbs-o-down font-16 pr-1"></i>${value['dislike']}</div>
+                                <div class="pr-3"><span><i class="fa fa-comments-o font-16 pr-1"></i>${value['total_comment']}</div>
                             </div>
                         </div>
                         <div class="ml-auto">

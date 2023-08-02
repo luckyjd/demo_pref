@@ -21,8 +21,8 @@ Function :
  - can search by title ( wildcard )
  - can change how many post per page ( apply after click search )
  - can sort by created_at, number of views, number of likes
- - can change page on pagination
-==> paging by only ajax + jquery , not reload page
+ - can change page on pagination ==> paging by only ajax + jquery , not reload page
+ - click on post to view detail post ( in process ) 
 
 # DB design
 <img width="803" alt="Screenshot 2023-08-02 at 23 12 23" src="https://github.com/luckyjd/demo_pref/assets/21038766/c7085463-2037-43cd-973e-34a683bd50de">

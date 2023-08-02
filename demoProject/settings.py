@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!vmlsi27(lqu0t(&svj3r3$gdgv=59g48s%owc@$t1gk3(nqhy
 DOTENV_FILE = Path(BASE_DIR).joinpath(".env")
 env_config = Config(RepositoryEnv(DOTENV_FILE))
 DEBUG = env_config("DEBUG", default=True, cast=bool)
-ALLOWED_HOSTS = env_config("ALLOWED_HOSTS", default="127.0.0.1,localhost,0.0.0.0,10.0.64.97", cast=Csv())
+ALLOWED_HOSTS = env_config("ALLOWED_HOSTS", default="127.0.0.1,localhost,0.0.0.0", cast=Csv())
 
 
 # Application definition
